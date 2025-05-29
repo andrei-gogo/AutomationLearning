@@ -1,5 +1,10 @@
-        '''rules to be added'''
+#feature rules
 .idea
 Test
 Practice/.gitkeep
 Practice/keptfile
+
+#rules from main
+NotNedded.txt
+.idea/
+.gitkeep
