@@ -23,8 +23,8 @@ print(necunoscut)
 #     Folosește +, -, *, /, %, ** și // dacă ai introdus deja.
 
 #     Adună două numere la alegere și afișează rezultatul.
-a = 3 + 4
-print(a)
+adunare = 3 + 4
+print(adunare)
 
 #     Calculează câtul și restul împărțirii dintre 17 și 4.
 catul = 17 / 4
