@@ -99,8 +99,8 @@ print (mesaj_complet)
 
 a=7
 b=3
-sum = a + b
-assert sum == 10
+suma = a + b
+assert suma == 10
 
 #    Creează un text = "python" și folosește assert text.lower() == "python" și assert text != "PYTHON".
 
