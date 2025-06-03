@@ -103,4 +103,8 @@ print(salut + " " + nume)
 #     Fă x = 2, y = 3, și folosește un dicționar de operatori pentru a calcula x * y și afișa rezultatul.
 x = 2
 y = 3
-print(x * y)
+operatori = {
+    "*": x * y
+}
+rezultat = operatori
+print("Rezultat: ", operatori.get("*"))
