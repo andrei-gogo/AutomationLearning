@@ -171,3 +171,4 @@ inmultire = {
 }
 rezultat = inmultire.get("*", "not found")
 print(rezultat)
+
