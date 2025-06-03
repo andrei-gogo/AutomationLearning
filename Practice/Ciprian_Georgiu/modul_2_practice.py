@@ -56,8 +56,8 @@ rezultat = (a + b) * 2 - a // b
 print(f"Rezultatul calcului este: {rezultat}")
 # 🕵️‍♂️ 3. Assertions – Exerciții
 #   Folosește assert pentru a verifica valori.
-##a = 2
-##assert a == 3, "2 nu este mai mare decat 3"
+a = 2
+assert a == 3, "2 nu este mai mare decat 3"
 #   Creează două variabile x = 10, y = 5 + 5, și fă assert că sunt egale.
 x = 10
 y = 5 + 5
