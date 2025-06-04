@@ -186,7 +186,37 @@
 # 🧠 5. Recapitulare – Exerciții Combinate
 #
 #     Creează două variabile a = 7, b = 3, calculează suma și folosește assert că rezultatul este 10.
+# a=7
+# b=3
+# suma = a+b
+# assert suma == 10, "X Error: Suma nu este egala cu 10"
+# print (suma)
+
 #     Creează un text = "python" și folosește assert text.lower() == "python" și assert text != "PYTHON".
+
+# text ="python"
+# assert text.lower() == "python" and text != "PYTHON"
+
 #     Afișează un mesaj compus din text și un număr, de exemplu: "Nivel: " + str(5).
+
+# text = "Nivel "
+# mesaj = text + str(5)
+# print(mesaj)
+
 #     Creează un salut = "Salut" și un nume = "Ioana", apoi unește-le cu spațiu între ele.
+
+# salut = "Salut"
+# nume = "Ioana"
+# mesaj = salut + " " + nume
+# print (mesaj)
+
 #     Fă x = 2, y = 3, și folosește un dicționar de operatori pentru a calcula x * y și afișa rezultatul.
+
+x = 2
+y = 3
+op = input("\n Introdu un operator: ")
+operatii ={
+     "*": x*y,
+}
+rezultat = operatii.get(op, "Operator Necunoscut")
+print(f"\n Rezultatul este: {rezultat}")
