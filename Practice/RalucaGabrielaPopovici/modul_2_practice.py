@@ -148,16 +148,41 @@
 
 #     Verifică că float(10) == 10.0 cu assert.
 
-
+# a = float(input(" Introdu valoarea lui a: "))
+#
+# print("Facem assert că float(10) == 10.0...")
+#
+# assert a==10.0, "X! Error: a nu este egal cu 10.0!"
+# input("\n Press Enter to continue...")
 #
 # 🎉 4. Strings – Exerciții
 #
 #     Creează o variabilă prenume cu numele tău.
+
+# nume =input("numele meu:")
+
 #     Creează salut concatenând "Bună, " + prenume.
-#     Afișează câte litere are prenume cu len().
-#     Transformă prenume în majuscule și afișează.
-#     Creează un mesaj complet: "Salut, " + prenume + "!", apoi afișează-l.
+# prenume =input("Prenumele meu:")
 #
+# salut = "Buna " + prenume
+#
+# print(salut)
+
+#     Afișează câte litere are prenume cu len().
+# prenume =input("Prenumele meu:")
+# length= len(prenume)
+# print(length)
+#     Transformă prenume în majuscule și afișează.
+# prenume =input("Prenumele meu:")
+# majuscule= prenume.upper()
+# print(majuscule)
+#     Creează un mesaj complet: "Salut, " + prenume + "!", apoi afișează-l.
+# prenume =input("Prenumele meu:")
+#
+# mesaj = "Buna " + prenume +"!"
+#
+# print(mesaj)
+
 # 🧠 5. Recapitulare – Exerciții Combinate
 #
 #     Creează două variabile a = 7, b = 3, calculează suma și folosește assert că rezultatul este 10.
