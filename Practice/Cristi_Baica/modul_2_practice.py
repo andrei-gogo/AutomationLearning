@@ -44,7 +44,7 @@ nume = "Ana"
 assert len(nume) == 3, "Numele are mai mult de 3 litere"
 #     Creează un text = "PYTHON" și verifică text.isupper() cu assert.
 text = "PYTHON"
-assert text.isupper() , "textul nu e scris tot cu majuscule"
+assert text.isupper() == True , "textul nu e scris tot cu majuscule"
 #     Verifică că float(10) == 10.0 cu assert.
 assert float(10) == 10.0, "rezultatul nu e adevarat"
 #
@@ -94,4 +94,4 @@ operatii = {
 }
 rezultat = operatii.get(op, "Operator Necunoscut")
 
-print(f"\n Rezultatul operatiei tale este: {rezultat}, dar oricum x ori y este ",x*y)
+print(f"\n Rezultatul operatiei tale este: {rezultat}, dar oricum x ori y este ", operatii.get("*"))
