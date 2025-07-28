@@ -25,7 +25,7 @@ else:
 # ➤ If not in levels: print "❓ Unknown level."
 
 levels = ("easy", "medium", "hard")
-selected_level = "easy";
+selected_level = "easy"
 if selected_level == "easy":
     print("🟢 Easy mode: Good for beginners.")
 elif selected_level == "medium":
@@ -47,7 +47,7 @@ monsters = {
     "orc": 15
 }
 
-choosen_monster = input("Choose a monster from `goblin`, `dragon` or `orc`:");
+choosen_monster = input("Choose a monster from `goblin`, `dragon` or `orc`:")
 if choosen_monster in monsters:
     print("Monster power: ", monsters[choosen_monster])
 else:
@@ -79,12 +79,14 @@ elif not has_key and not door_locked:
 # ➤ If score >= 100: print "🌟 {player} levels up!"
 # ➤ Else: print "🎮 {player} needs more XP."
 
-scores ={
-    "Lidia": 120,
-    "Alex": 140,
-    "Tudor": 80
-}
-for scores >= 100:
+# scores ={
+#     "Lidia": 120,
+#     "Alex": 140,
+#     "Tudor": 80
+# }
+# for player, score in scores{
+#     if score >= 100
+# }
 
 
 # 91% of storage used …
