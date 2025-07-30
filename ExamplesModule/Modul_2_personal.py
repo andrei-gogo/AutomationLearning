@@ -355,9 +355,205 @@
 # for produse in cos:
 #     print(produse)
 
+#
+# energie = 3
+# while energie > 0:
+#     print ("energie", energie)
+#     energie -=1
+# print("bateria este goala.")
 
-energie = 3
-while energie > 0:
-    print ("energie", energie)
-    energie -=1
-print("bateria este goala.")
+#
+# # EXERCITII RECAPITULARE
+#
+# # 1. Tuples - demonstratie imutabilitate
+# pozitie = (10, 20)
+# print("Pozitie initiala:", pozitie)
+# # pozitie[0] = 99  # va da eroare
+#
+# # 2. Operators Game
+# x = float(input("Introdu primul numar: "))
+# y = float(input("Introdu al doilea numar: "))
+# op = input("Introdu operatorul (+, -, *, /, %, **): ")
+# operatii = {
+#     "+": x + y,
+#     "-": x - y,
+#     "*": x * y,
+#     "/": x / y,
+#     "%": x % y,
+#     "**": x ** y
+# }
+# rezultat = operatii.get(op, "Operator necunoscut")
+# print("Rezultatul este:", rezultat)
+#
+# # 3. Seturi - operatii
+# culori = {"rosu", "verde"}
+# culori.add("albastru")
+# culori.remove("rosu")
+# print("Culori actualizate:", sorted(culori))
+#
+# # 4. Eliminare duplicate din lista
+# numere = [1, 2, 2, 3, 4, 4, 5]
+# numere_fara_duplicate = list(set(numere))
+# print("Fara duplicate:", numere_fara_duplicate)
+#
+# # 5. Dictionare - parcurgere
+# elev = {"nume": "Tudor", "punctaj": 95}
+# for k, v in elev.items():
+#     print(k, "->", v)
+#
+# # 6. For loop + else
+# cutii = ["cadou", "cadou", "cadou"]
+# for cutie in cutii:
+#     print("Deschizi o cutie:", cutie)
+# else:
+#     print("Toate cutiile au fost deschise!")
+#
+# # 7. Range si paritate
+# for n in range(1, 10):
+#     if n % 2 == 0:
+#         print("Par:", n)
+#     else:
+#         print("Impar:", n)
+#
+# #🔁 1. For Loop – Joc „Aviatorul”
+#
+# avioane = ["F16", "Boeing737", "AirbusA380"]
+# for avion in avioane:
+#     print("🛫 Decolează:", avion)
+# #🎲 2. For Loop – Joc „Parcurge textul”
+#
+# mesaj = "JOC"
+# for litera in mesaj:
+#     print("🔠 Litera găsită:", litera)
+# #🔄 3. Break – Joc „Oprește la bomba”
+#
+# joc = ["câmp", "câmp", "bombă", "câmp"]
+# for zona in joc:
+#     print("🚶 Ești pe:", zona)
+#     if zona == "bombă":
+#         print("💥 BOOM! Ai pierdut.")
+#         break
+# #🧮 4. Range() – Joc „Numărătorul”
+#
+# for numar in range(1, 6):
+#     print("🎯 Ținta numărul:", numar)
+# #🧮 5. Range() cu step – Joc „Numere impare”
+#
+# for n in range(1, 10, 2):
+#     print("🔢 Număr impar:", n)
+# #📦 6. Iterating through dictionary – Joc „Statistici jucător”
+#
+# jucator = {"nume": "Tudor", "scor": 90, "nivel": 3}
+# for k, v in jucator.items():
+#     print("📊", k, "=>", v)
+# #✅ 7. For + Else – Joc „Scanează tot și anunță”
+#
+# cutii = ["cadou", "cadou", "cadou"]
+# for cutie in cutii:
+#     print("📦 Deschizi o cutie:", cutie)
+# else:
+#     print("🎉 Toate cutiile au fost deschise!")
+
+#
+# # 🔁 1. while simplu – Numărătoare inversă
+#
+# print("🎯 Lansare rachetă!")
+# n = 5
+# while n > 0:
+#     print("⏳", n)
+#     n -= 1
+# print("🚀 Lansare!")
+#
+#
+#
+# # 💡 2. while cu listă și pop()
+#
+# cadouri = ["minge", "carte", "robot"]
+# while cadouri:
+#     print("🎁 Ai desfăcut un cadou:", cadouri.pop())
+# print("🎉 Nu mai sunt cadouri.")
+#
+# # 🔚 3. break – Găsește comoara
+#
+# obiecte = ["piatra", "nisip", "cheie", "comora", "lemn"]
+# i = 0
+# while i < len(obiecte):
+#     if obiecte[i] == "comora":
+#         print("🏆 Ai găsit comoara la pasul", i)
+#         break
+#     print("🔎 Cauti... Ai gasit:", obiecte[i])
+#     i += 1
+#
+# #
+# # ⏭ 4. continue – Sari peste obstacol
+# obstacole = ["drum", "noroi", "piatra", "drum"]
+# i = 0
+# while i < len(obstacole):
+#     if obstacole[i] == "piatra":
+#         i += 1
+#         continue
+#     print("🚶 Mergi pe:", obstacole[i])
+#     i += 1
+#
+#
+# # 🧩 5. while + else – Găsește un număr
+#
+# numere = [3, 7, 2, 5]
+# caut = 9
+# i = 0
+#
+# while i < len(numere):
+#     if numere[i] == caut:
+#         print("✅ Găsit:", caut)
+#         break
+#     i += 1
+# else:
+#     print("❌ Numărul", caut, "nu a fost găsit.")
+#
+#
+# # 🔁 6. Loop infinit cu break
+#
+#
+# cos2 = []
+# cos1 = ""
+# while True:
+#     comanda = input("🛒 Ce vrei să cumperi? (scrie 'stop' pentru a ieși): ")
+#     if comanda == "stop":
+#         print("👋 Pa, spor la cumpărături!")
+#         break
+#     #cos2.append(comanda)
+#     if cos1 == "":
+#         cos1 = comanda
+#     else:
+#         cos1 = cos1 + "," + comanda
+#     print("✅ Ai adăugat la coș:", comanda)
+# #
+# # print("\n In cos ai urmatoarelel cumparaturi:")
+# # #for produse in cos2:
+# #     #print("ai urmatoarele produse in cos",produse)
+# # if cos1:
+# #     print(cos1)
+# # else:
+# #     print("Cosul este gol")
+#
+#
+# # 🧠 7. Loop while pe o variabilă
+#
+# energie = 3
+# while energie > 0:
+#     print("⚡ Energie:", energie)
+#     energie -= 1
+# print("🔋 Bateria este goală.")
+#
+# # 🎲 Dice game
+# import random
+#
+# while True:
+#     input("🎲 Apasă Enter pentru a arunca zarul...")
+#     zar = random.randint(1, 6)
+#     print("Ai dat:", zar)
+#
+#     again = input("Vrei să mai joci? (da/nu): ")
+#     if again.lower() != "da":
+#         print("🎮 Joc încheiat.")
+#         break
