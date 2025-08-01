@@ -359,21 +359,34 @@
 #
 # Cu if/else, afișează elevul câștigător.
 
-elevi = []
-score = []
-elevi_score = {}
+elevi_scor = []
 
 while True:
-    elevi_add = input("introdu un nume elev or `stop`: ")
-    elevi_score = int(input("introdu un scor or `stop`: "))
-    if elevi_add or elevi_score == "stop":
+    nume = input("Introdu un nume elev (sau stop): ")
+    if nume == "stop":
         break
-    elevi.append(elevi_add)
-    score.append(elevi_score)
-    elevi_score["name"] = elevi_add
-    elevi_score["scor"] = elevi_score
+    scor = input("Introdu un scor elev (sau stop): ")
+    if scor == "stop":
+        break
+    elevi_scor.append({"nume" : nume, "scor": int(scor)})
+print("Urmatorii elevi si scorul lor au fost adaugati: ", elevi_scor)
 
-print(elevi_score[elevi], elevi_score[elevi_score])
+scor_min = 0
+elev_top = ""
+
+for scor_max in elevi_scor:
+    if scor_max["scor"] > scor_min:
+        elev_top = scor_max["nume"]
+        scor_min = scor_max["scor"]
+
+print(f"The winner is student {elev_top} cu scorul de: {scor_min}")
+
+#
 
 
 
+
+
+
+
+    #---
