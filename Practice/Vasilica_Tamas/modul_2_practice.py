@@ -112,3 +112,5 @@ operatie = {
     "*": x * y
 }
 print(operatie["*"])
+
+# Viitoarea tema
